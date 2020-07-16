@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Lab08_Collections.Classes;
 
 namespace Lab08_Collections
@@ -25,6 +26,8 @@ namespace Lab08_Collections
         {
             bool run = true;
 
+            Console.WriteLine("Welcome to Phil's Library!");
+
             while(run)
             {
                 Console.WriteLine(@"Choose an option from below:
@@ -37,15 +40,26 @@ namespace Lab08_Collections
 
                 Press any other key to Exit");
 
-                int input = Convert.ToInt32(Console.ReadLine());
+                string input = Console.ReadLine();
 
                 switch(input)
                 {
-                    case 1:
+                    case "1":
+                        ViewAllBooks();
                         break;
-                    case 2:
+                    case "2":
                         break;
-                    case 3:
+                    case "3":
+                        break;
+                    case "4":
+                        ReturnBook();
+                        break;
+                    case "5":
+                        ViewBookBag();
+                        break;
+                    default:
+                        run = false;
+                        Console.WriteLine("Thank you for coming to the library. Goodbye!");
                         break;
                 }
                     //View all Books
@@ -64,6 +78,30 @@ namespace Lab08_Collections
             AddABook("History of Memeology", "Sonic", "Heghog", 360, Genre.Detective );
             AddABook("Chicken Memes For the Soul", "Jeff", "Goldblum", 8, Genre.Fantasy);
             AddABook("Das Meme-ital", "Charlie", "Memelord", 241, Genre.Adventure );
+        }
+
+        static void ViewAllBooks()
+        {
+            Console.WriteLine("\nThese are all the books in the library.");
+            
+            for (int i = 0; i < Library.Count(); i++)
+            {
+                Console.WriteLine("--> " + Library.ElementAt(i).Title 
+                    + " by " + Library.ElementAt(i).Author.FirstName 
+                    + " " + Library.ElementAt(i).Author.LastName);
+            }
+        }
+
+        static void ViewBookBag()
+        {
+            Console.WriteLine("\nThese are all the books in your book bag.");
+
+            for (int i = 0; i < BookBag.Count; i++)
+            {
+                Console.WriteLine("--> " + BookBag[i].Title 
+                    + " by " + Library.ElementAt(i).Author.FirstName
+                    + " " + Library.ElementAt(i).Author.LastName);
+            }
         }
 
         static void AddABook(string title, string firstName, string lastName, int numberOfPages, Genre genre)

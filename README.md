@@ -1,5 +1,5 @@
 # Lab08-Collections
-Code Fellows 401: Lab 04.
+Code Fellows 401: Lab 08.
 
 ## Introduction
 
@@ -32,17 +32,10 @@ Then select and open ```Lab08-Collections.sln```
 
 ---
 ### Visuals
-***[Add screenshots of your application in action]***
-#### Application Start
-![Image 1](https://via.placeholder.com/750x500)
-#### Using the Application
-![Image 1](https://via.placeholder.com/750x500)
-#### Application End
-![Image 1](https://via.placeholder.com/750x500)
+#### Example: Viewing All Books in Library
+![Example Program - View All Books](./assets/lab08-collections.png)
 
 ---
 ### Change Log
 - Initial commit
-- 
-
-
+- Added ViewAllBooks() and ViewBookBag(). Implemented UserInterface() options.
