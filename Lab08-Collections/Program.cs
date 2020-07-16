@@ -17,7 +17,44 @@ namespace Lab08_Collections
             Library = new Library<Book>();
             BookBag = new List<Book>();
 
+            LoadBooks();
+            UserInterface();
+        }
 
+        static void UserInterface()
+        {
+            bool run = true;
+
+            while(run)
+            {
+                Console.WriteLine(@"Choose an option from below:
+                
+                1.) View all Books
+                2.) Add a Book
+                3.) Borrow a book
+                4.) Return a book
+                5.) View Book Bag
+
+                Press any other key to Exit");
+
+                int input = Convert.ToInt32(Console.ReadLine());
+
+                switch(input)
+                {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                }
+                    //View all Books
+                    //Add a Book
+                    //Borrow a book
+                    //Return a book
+                    //View Book Bag
+                    //Exit
+            }
         }
 
         static void LoadBooks()

@@ -3,14 +3,14 @@ Code Fellows 401: Lab 04.
 
 ## Introduction
 
-Lab04 - Classes & Objects
+Lab08 - Collections
 
-Authors: Bade Habib, Diane Stephani, Paul Rest
+Authors: Bade Habib, Lami Beach
 
 ----
 
 ## Description
-This is a C# console application to practically apply concepts of class 04: classes & objects. This lab consists of a 2-player tic-tac-toe game.
+This is a C# console application to practically apply concepts of interfaces and collection classes. This is done by simulating an interaction with a library where the user borrows books, adds new books, and removes books from the library.
 
 ---
 
@@ -18,7 +18,7 @@ This is a C# console application to practically apply concepts of class 04: clas
 Clone this repository to your local machine.
 
 ```
-$ git clone [https://github.com/dianestephani/lab04tictactoe.git]
+$ git clone [x]
 ```
 
 ### To run the program from Visual Studio:
@@ -26,15 +26,13 @@ Select ```File``` -> ```Open``` -> ```Project/Solution```
 
 Next navigate to the location you cloned the Repository.
 
-Double click on the ```Lab 04 Tic Tac Toe Round 2``` directory.
+Double click on the ```Lab08-Collections``` directory.
 
-Then select and open ```Lab 04 Tic Tac Toe Round 2.sln```
+Then select and open ```Lab08-Collections.sln```
 
 ---
-//Pending
 ### Visuals
 ***[Add screenshots of your application in action]***
-//Pending
 #### Application Start
 ![Image 1](https://via.placeholder.com/750x500)
 #### Using the Application
@@ -43,8 +41,8 @@ Then select and open ```Lab 04 Tic Tac Toe Round 2.sln```
 ![Image 1](https://via.placeholder.com/750x500)
 
 ---
-//Pending
 ### Change Log
-***[The change log will list any changes made to the code base. This includes any changes from TA/Instructor feedback]***  
+- Initial commit
+- 
 
 
